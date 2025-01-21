@@ -1,7 +1,7 @@
 # HI I´M WILLIAM Android Developer
 
 ## Introduction
-This README serves as a guide for developers working on the Android application utilizing Hilt, Dagger, MVVM, Retrofit, Coroutines, and design patterns. It outlines the project structure, dependencies, and best practices to ensure a seamless development experience.
+This README serves as a guide for developers working on the Android application utilizing Hilt, Dagger, MVVM, Retrofit, Paging, Jetpack Compose, Coroutines, and robust testing frameworks. It outlines the project structure, dependencies, and best practices to ensure a seamless development experience.
 
 ---
 
@@ -18,13 +18,20 @@ This README serves as a guide for developers working on the Android application 
 
 ---
 
+## Screenshots
+
+|<img src="screenshots/Liverpool Tablet.png" width=200/>|<img src="Liverpool Tablet2.png" width=200/>|<img src="screenshots/Liverpool Tablet 3.png" width=200/>|
+
 ## Project Overview
 This project leverages modern Android development tools and frameworks, including:
 - **Hilt** for dependency injection.
 - **Dagger** for advanced DI scenarios.
 - **MVVM** (Model-View-ViewModel) architecture for clean separation of concerns.
 - **Retrofit** for network operations.
+- **Paging** for efficient data pagination.
+- **Jetpack Compose** for modern UI development.
 - **Coroutines** for asynchronous programming.
+- Testing with **JUnit**, **MockK**, and **Espresso**.
 - Common design patterns like Repository, Singleton, and Factory for scalable and maintainable code.
 
 ---
@@ -54,7 +61,7 @@ project-root
 |   |   |-- java/         # Java/Kotlin source code
 |   |   |   |-- di/       # Dependency Injection setup
 |   |   |   |-- data/     # Data layer (repositories, models, etc.)
-|   |   |   |-- ui/       # View layer (activities, fragments, etc.)
+|   |   |   |-- ui/       # View layer (activities, fragments, Compose components, etc.)
 |   |   |   |-- viewmodel/ # ViewModel layer
 |   |   |-- res/          # Resources (layouts, drawables, etc.)
 |   |-- build.gradle      # Module-level Gradle config
@@ -70,6 +77,11 @@ project-root
 - **[Dagger](https://dagger.dev/)**: Used for advanced DI scenarios.
 - **[Retrofit](https://square.github.io/retrofit/)**: REST API client.
 - **[Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)**: For managing asynchronous tasks.
+- **[Paging Library](https://developer.android.com/topic/libraries/architecture/paging)**: Efficient data pagination.
+- **[Jetpack Compose](https://developer.android.com/jetpack/compose)**: For building modern UIs.
+- **[MockK](https://mockk.io/)**: For mocking in unit tests.
+- **[JUnit](https://junit.org/)**: For unit testing.
+- **[Espresso](https://developer.android.com/training/testing/espresso)**: For UI testing.
 - **[Jetpack Components](https://developer.android.com/jetpack)**: LiveData, ViewModel, Navigation, etc.
 - **Gson**: For JSON serialization/deserialization.
 
@@ -80,9 +92,11 @@ project-root
 2. **Dependency Injection:** Use Hilt for injecting dependencies. Define modules in the `di/` package.
 3. **Networking:** Use Retrofit for API calls. Define all API interfaces and Retrofit instances in the `data/` package.
 4. **Asynchronous Programming:** Use Kotlin Coroutines for background tasks and LiveData for observing data changes.
-5. **Error Handling:** Implement error handling at the repository level and propagate user-friendly messages to the ViewModel.
-6. **Code Styling:** Adhere to Kotlin coding conventions and use consistent naming patterns.
-7. **Unit Testing:** Write tests for ViewModels, repositories, and use mocked dependencies.
+5. **UI Development:** Build UI with Jetpack Compose. Use state management for reactive updates.
+6. **Pagination:** Implement the Paging Library for loading large datasets efficiently.
+7. **Error Handling:** Implement error handling at the repository level and propagate user-friendly messages to the ViewModel.
+8. **Code Styling:** Adhere to Kotlin coding conventions and use consistent naming patterns.
+9. **Unit Testing:** Write tests for ViewModels, repositories, and use mocked dependencies with MockK.
 
 ---
 
@@ -107,7 +121,8 @@ project-root
    ```bash
    ./gradlew connectedAndroidTest
    ```
-3. Mock dependencies for ViewModel and Repository testing using Dagger and Hilt.
+3. Use MockK for mocking dependencies in unit tests.
+4. Test UI components with Jetpack Compose testing tools and Espresso.
 
 ---
 
@@ -121,3 +136,4 @@ project-root
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
