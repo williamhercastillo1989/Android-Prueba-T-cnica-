@@ -23,10 +23,8 @@ This README serves as a guide for developers working on the Android application 
 |<img src="screenshots/Liverpool Tablet.png" width=200/>|<img src="screenshots/Liverpool Tablet2.png" width=200/>|<img src="screenshots/Liverpool Tablet 3.png" width=200/>|
 ## Screenshots 
 |<img src="screenshots/Screenshot_20250121_021721_Liverpool Test Product Search.jpg" width=200/>|<img src="screenshots/Screenshot_20250121_045846_Liverpool Test Product Search.jpg" width=200/>|
- <imgsrc="screenshots/Screenshot_20250121_045810_Liverpool Test Product Search.jpg" width=200/>|
-
 ## Screenshots Test
-|<img src="screenshots/Liverpool Tablet.png" width=200/>|
+|<img src="screenshots/Unit Test.png" width=200/>|
 
 ## Project Overview
 This project leverages modern Android development tools and frameworks, including:
