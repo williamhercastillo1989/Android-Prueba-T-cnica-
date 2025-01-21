@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Liverpool Test Product Search</string>
+
+    <!-- Search -->
+    <string name="search_jetsnack">Buscar</string>
+
+    <string name="search_no_matches">No matches for “%1s”</string>
+    <string name="search_no_matches_retry">Try broadening your search</string>
+    <string name="search_count">%1d items</string>
+    <string name="label_add">Add to cart</string>
+    <string name="label_search">Perform search</string>
+    <string name="label_top_bar">Productos Liverpool</string>
+    <string name="label_back">Atras</string>
+    <string name="label_empy_response">No se encontraron resultados</string>
+    <string name="label_error_response">500 Internal Server Error</string>
+    <string name="label_lower_price">Precio menor</string>
+    <string name="label_higher_price">Precio mayor</string>
+    <string name="label_Predefined">Predefinida</string>
+</resources>
