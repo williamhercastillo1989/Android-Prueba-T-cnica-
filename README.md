@@ -18,6 +18,11 @@ This README serves as a guide for developers working on the Android application 
 
 ---
 
+## Error API
+An error occurred when querying the API Lower price and Higher price. This error was returned to us, but all the test points were finished.
+https://shoppapp.liverpool.com.mx/appclienteservices/services/v3/plp?search-
+string={{termino-de-busqueda}}&page-number={{numero-de-pagina}}&minSortPrice|1
+
 ## Screenshots Tablet
 
 |<img src="screenshots/Liverpool Tablet.png" width=200/>|<img src="screenshots/Liverpool Tablet2.png" width=200/>|<img src="screenshots/Liverpool Tablet 3.png" width=200/>|
